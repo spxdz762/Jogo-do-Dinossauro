@@ -1,44 +1,58 @@
-*{
+/* Fontes personalizadas */
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/* Estilos globais */
+body {
+    background-color: #f7f7f7;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
     margin: 0;
     padding: 0;
 }
 
-#game{
-    width: 500px;
-    height: 200px;
-    border: 1px solid black;
+header {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
 }
 
-#personagem{
-    width: 20px;
-    height: 50px;
-    background-color: red;
-    position: relative;
-    top: 150px;
-    animation: personagem 500ms infinite;
+h1 {
+    font-family: "Press Start 2P", cursive;
+    font-size: 48px;
+    margin: 0;
+    text-shadow: 2px 2px #333;
 }
 
-.animar{
+main {
+    text-align: center;
+    padding: 20px;
 }
 
-@keyframes personagem{
-    0%{top: 150px;}
-    30%{top: 100px;}
-    70%{top: 100px;}
-    100%{top: 150px;}
+canvas {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #333;
 }
 
-#quadrado{
-    width: 20px;
-    height: 20px;
-    background-color: blue;
-    position: relative;   
-    top: 30px;
-    left: 480px;
-    animation: quadrado 1s infinite linear;
+button {
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: background-color 0.2s ease-in-out;
 }
 
-@keyframes quadrado{
-    0%{left: 480px;}
-    100%{left: -40px;}
+button:hover {
+    background-color: #444;
+}
+
+#restartButton {
+    margin-top: 20px;
 }
