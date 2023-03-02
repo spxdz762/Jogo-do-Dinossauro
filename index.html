@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-    <title>Jogo do Dinossauro</title>
+	<title>Jogo do Dinossauro</title>
 </head>
 <body>
-    <div id="game">
-        <div id="personagem">
-            <div id="quadrado"></div>
-        </div>
-    </div>
-
+	<header>
+		<h1>Jogo do Dinossauro</h1>
+	</header>
+	<main>
+		<p>Pule os cactos para sobreviver!</p>
+		<canvas id="canvas" width="600" height="150"></canvas>
+		<p><button id="startButton">Começar</button></p>
+		<p><button id="restartButton" style="display:none">Reiniciar</button></p>
+	</main>
+	<script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
